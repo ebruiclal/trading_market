@@ -1,0 +1,166 @@
+<body>
+
+  <div class="form-container">
+    <label for="currency">Döviz Kodu:</label>
+    <select [(ngModel)]="currency" name="currency" style="
+      
+    background-color: #3f5156; 
+    color: white; 
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    padding: 7px; 
+    width: 100%; 
+    box-sizing: border-box; 
+  ">
+      
+      <option value="ARS">ARS - Arjantin Pesosu</option>
+      <option value="AUD">AUD - Avustralya Doları</option>
+      <option value="BHD">BHD - Bahreyn Dinarı</option>
+      <option value="BWP">BWP - Botsvana Pulası</option>
+      <option value="BRL">BRL - Brezilya Reali</option>
+      <option value="BND">BND - Brunei Doları</option>
+      <option value="BGN">BGN - Bulgar Levası</option>
+      <option value="CAD">CAD - Kanada Doları</option>
+      <option value="CLP">CLP - Şili Pesosu</option>
+      <option value="CNY">CNY - Çin Yuanı</option>
+      <option value="COP">COP - Kolombiya Pesosu</option>
+      <option value="CZK">CZK - Çek Korunası</option>
+      <option value="DKK">DKK - Danimarka Kronu</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="HKD">HKD - Hong Kong Doları</option>
+      <option value="HUF">HUF - Macar Forinti</option>
+      <option value="ISK">ISK - İzlanda Kronası</option>
+      <option value="INR">INR - Hindistan Rupisi</option>
+      <option value="IDR">IDR - Endonezya Rupisi</option>
+      <option value="IRR">IRR - İran Riyali</option>
+      <option value="ILS">ILS - İsrail Şekeli</option>
+      <option value="JPY">JPY - Japon Yeni</option>
+      <option value="KZT">KZT - Kazakistan Tengesi</option>
+      <option value="KRW">KRW - Güney Kore Wonu</option>
+      <option value="KWD">KWD - Kuveyt Dinarı</option>
+      <option value="LYD">LYD - Libya Dinarı</option>
+      <option value="MYR">MYR - Malezya Ringiti</option>
+      <option value="MUR">MUR - Mauritius Rupisi</option>
+      <option value="MXN">MXN - Meksika Pesosu</option>
+      <option value="NPR">NPR - Nepal Rupisi</option>
+      <option value="NZD">NZD - Yeni Zelanda Doları</option>
+      <option value="NOK">NOK - Norveç Kronu</option>
+      <option value="OMR">OMR - Umman Riyali</option>
+      <option value="PKR">PKR - Pakistan Rupisi</option>
+      <option value="PHP">PHP - Filipinler Pesosu</option>
+      <option value="PLN">PLN - Polonya Zlotisi</option>
+      <option value="QAR">QAR - Katar Riyali</option>
+      <option value="RON">RON - Romen Leyi</option>
+      <option value="RUB">RUB - Rus Rublesi</option>
+      <option value="SAR">SAR - Suudi Arabistan Riyali</option>
+      <option value="SGD">SGD - Singapur Doları</option>
+      <option value="ZAR">ZAR - Güney Afrika Randı</option>
+      <option value="LKR">LKR - Sri Lanka Rupisi</option>
+      <option value="SEK">SEK - İsveç Kronu</option>
+      <option value="CHF">CHF - İsviçre Frangı</option>
+      <option value="TWD">TWD - Yeni Tayvan Doları</option>
+      <option value="THB">THB - Tayland Bahtı</option>
+      <option value="TTD">TTD - Trinidad ve Tobago Doları</option>
+      <option value="TRY">TRY - Türk Lirası</option>
+      <option value="AED">AED - Birleşik Arap Emirlikleri Dirhemi</option>
+      <option value="GBP">GBP - İngiliz Sterlini</option>
+      <option value="USD">USD - Amerikan Doları</option>
+      <option value="VES">VES - Venezuela Bolivarı</option>
+    </select>
+  
+    <label for="amount">Miktar:</label>
+    <input type="text" [(ngModel)]="amount" name="amount">
+  
+    <label for="desiredCurrency">Çevrilmesi İstenen Döviz Kodu:</label>
+    <select [(ngModel)]="desiredCurrency" name="desiredCurrency" style="
+      
+        background-color: #3f5156; 
+        color: white; 
+        font-size: 15px;
+        border: none; 
+        border-radius: 4px; 
+        padding: 7px;
+        width: 100%;
+        box-sizing: border-box; 
+      ">
+      <option value="ARS">ARS - Arjantin Pesosu</option>
+      <option value="AUD">AUD - Avustralya Doları</option>
+      <option value="BHD">BHD - Bahreyn Dinarı</option>
+      <option value="BWP">BWP - Botsvana Pulası</option>
+      <option value="BRL">BRL - Brezilya Reali</option>
+      <option value="BND">BND - Brunei Doları</option>
+      <option value="BGN">BGN - Bulgar Levası</option>
+      <option value="CAD">CAD - Kanada Doları</option>
+      <option value="CLP">CLP - Şili Pesosu</option>
+      <option value="CNY">CNY - Çin Yuanı</option>
+      <option value="COP">COP - Kolombiya Pesosu</option>
+      <option value="CZK">CZK - Çek Korunası</option>
+      <option value="DKK">DKK - Danimarka Kronu</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="HKD">HKD - Hong Kong Doları</option>
+      <option value="HUF">HUF - Macar Forinti</option>
+      <option value="ISK">ISK - İzlanda Kronası</option>
+      <option value="INR">INR - Hindistan Rupisi</option>
+      <option value="IDR">IDR - Endonezya Rupisi</option>
+      <option value="IRR">IRR - İran Riyali</option>
+      <option value="ILS">ILS - İsrail Şekeli</option>
+      <option value="JPY">JPY - Japon Yeni</option>
+      <option value="KZT">KZT - Kazakistan Tengesi</option>
+      <option value="KRW">KRW - Güney Kore Wonu</option>
+      <option value="KWD">KWD - Kuveyt Dinarı</option>
+      <option value="LYD">LYD - Libya Dinarı</option>
+      <option value="MYR">MYR - Malezya Ringiti</option>
+      <option value="MUR">MUR - Mauritius Rupisi</option>
+      <option value="MXN">MXN - Meksika Pesosu</option>
+      <option value="NPR">NPR - Nepal Rupisi</option>
+      <option value="NZD">NZD - Yeni Zelanda Doları</option>
+      <option value="NOK">NOK - Norveç Kronu</option>
+      <option value="OMR">OMR - Umman Riyali</option>
+      <option value="PKR">PKR - Pakistan Rupisi</option>
+      <option value="PHP">PHP - Filipinler Pesosu</option>
+      <option value="PLN">PLN - Polonya Zlotisi</option>
+      <option value="QAR">QAR - Katar Riyali</option>
+      <option value="RON">RON - Romen Leyi</option>
+      <option value="RUB">RUB - Rus Rublesi</option>
+      <option value="SAR">SAR - Suudi Arabistan Riyali</option>
+      <option value="SGD">SGD - Singapur Doları</option>
+      <option value="ZAR">ZAR - Güney Afrika Randı</option>
+      <option value="LKR">LKR - Sri Lanka Rupisi</option>
+      <option value="SEK">SEK - İsveç Kronu</option>
+      <option value="CHF">CHF - İsviçre Frangı</option>
+      <option value="TWD">TWD - Yeni Tayvan Doları</option>
+      <option value="THB">THB - Tayland Bahtı</option>
+      <option value="TTD">TTD - Trinidad ve Tobago Doları</option>
+      <option value="TRY">TRY - Türk Lirası</option>
+      <option value="AED">AED - Birleşik Arap Emirlikleri Dirhemi</option>
+      <option value="GBP">GBP - İngiliz Sterlini</option>
+      <option value="USD">USD - Amerikan Doları</option>
+      <option value="VES">VES - Venezuela Bolivarı</option>
+    </select>
+  
+    <button (click)="push()" style="margin-top: 10px;">Dönüştür</button>
+  </div>
+  
+  <div *ngIf="conversionResult" style="margin: 20%;">
+    <table>
+      <thead >
+        <tr >
+          <th>Kod</th>
+          <th>Döviz İsmi</th>
+          <th>Değer</th>
+          <th>Hesaplanmış Değer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ conversionResult.code }}</td>
+          <td>{{ conversionResult.name }}</td>
+          <td>{{ conversionResult.rate }}</td>
+          <td>{{ conversionResult.calculated }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </body>
+  

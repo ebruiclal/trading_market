@@ -1,0 +1,41 @@
+body {
+  background-color: #12191b;
+  margin: 0;
+  padding: 0;
+}
+
+.response-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.item-container {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+
+}
+
+.content {
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.buy {
+  background-color: #4CAF50; /* Yeşil */
+}
+
+.sell {
+  background-color: #f44336; /* Kırmızı */
+}

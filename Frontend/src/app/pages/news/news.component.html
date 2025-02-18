@@ -1,0 +1,14 @@
+<body>
+    
+<div class="news-container">
+    <div *ngFor="let news of newsList" class="news-item">
+      <a [href]="news.url" target="_blank">
+        <img [src]="news.image" alt="Haber Resmi">
+        <h3>{{ news.name }}</h3>
+        <p>{{ news.description }}</p>
+        <p><strong>Kaynak:</strong> {{ news.source }}</p>
+        <p><strong>Tarih:</strong> {{ news.date | date: 'dd/MM/yyyy HH:mm' }}</p>
+      </a>
+    </div>
+  </div>
+</body>

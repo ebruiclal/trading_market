@@ -1,0 +1,44 @@
+body {
+    background-color: #253135; /* Sayfa arka plan rengi */
+    font-family: Arial, sans-serif; /* Genel font ailesi */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .news-item {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #12191b; /* Haber öğelerinin arka plan rengi */
+    color: white; /* Haber öğelerinin yazı rengi */
+  }
+  
+  .news-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .news-item h3 {
+    margin-top: 10px;
+  }
+  
+  .news-item p {
+    margin-top: 5px;
+  }
+  
+  .news-item a {
+    text-decoration: none;
+    color: white; /* Haber öğelerinin bağlantı rengi */
+  }
+  
+  .news-item a:hover {
+    color: #007bff; /* Bağlantı üzerine gelindiğindeki renk */
+  }
+  

@@ -1,0 +1,33 @@
+<div class="parent">
+  <table class="tablo">
+    <thead class="tablohead">
+      <tr>
+        <th>Kod</th>
+        <th>Yüzdelik Değişim</th>
+        <th>Son Değer</th>
+        <th>Hacim</th>
+        <th>Günlük Minunum Değer</th>
+        <th>Günlük Maksimum Değer</th>
+        <th>Zaman</th>
+        <th>Hisse Senedi İsmi</th>
+      </tr>
+    </thead>
+    <tbody class="tablobody">
+      <tr *ngFor="let item of liveData.result" class="tablo1">
+        <td>
+          <a href="link" style="color: white; text-decoration: none;"
+            onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'">
+            {{ item.code }}
+          </a>
+        </td>
+        <td>{{ item.rate }}</td>
+        <td>{{ item.lastpricestr }}</td>
+        <td>{{ item.hacimstr }}</td>
+        <td>{{ item.minstr }}</td>
+        <td>{{ item.maxstr }}</td>
+        <td>{{ item.time }}</td>
+        <td>{{ item.text }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

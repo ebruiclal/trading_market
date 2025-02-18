@@ -1,0 +1,17 @@
+api:
+    key:
+        myApiKey: apikey 5x9sXYhSFQxtyGPsAHtjKQ:6puHg6dHJlK5EkWEjVNXPv
+
+scheduledSave:
+    strategy:
+        api:
+            url: http://localhost:8081/strategy/trader/day/save
+
+scheduledDelete:
+    strategy:
+        api:
+            url: http://localhost:8081/strategy/trader/day/delete
+
+livedata:
+    api:
+        url: http://localhost:8081/api/collect/livedata
